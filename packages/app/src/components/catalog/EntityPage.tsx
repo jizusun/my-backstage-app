@@ -70,6 +70,7 @@ import {
 
 import { TechDocsAddons } from '@backstage/plugin-techdocs-react';
 import { ReportIssue } from '@backstage/plugin-techdocs-module-addons-contrib';
+import { MyPluginEntityContent } from '@internal/plugin-my-plugin';
 
 const techdocsContent = (
   <EntityTechdocsContent>
@@ -338,6 +339,9 @@ const systemPage = (
         </Grid>
       </Grid>
     </EntityLayout.Route>
+    <EntityLayout.Route path="/your-custom-route" title="CustomTitle">
+      <MyPluginEntityContent />
+    </EntityLayout.Route>
     <EntityLayout.Route path="/diagram" title="Diagram">
       <EntityCatalogGraphCard
         variant="gridItem"
@@ -357,7 +361,7 @@ const systemPage = (
         unidirectional={false}
       />
     </EntityLayout.Route>
-  </EntityLayout>
+  </EntityLayout >
 );
 
 const domainPage = (

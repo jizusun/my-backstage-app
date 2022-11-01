@@ -1,1 +1,1 @@
-export { myPluginPlugin, MyPluginPage } from './plugin';
+export { myPluginPlugin, MyPluginPage, MyPluginEntityContent } from './plugin';
